@@ -4,7 +4,6 @@ x0x0bのページです．
 
 ## せいさくぶつ
 
-### station-board
-[https://station-board.herokuapp.com/]()  
+### [station-board](https://station-board.herokuapp.com/)
 かつて駅にあった（実際に見たことはない）伝言板をイメージして初のWebアプリ制作．  
 現段階では駅ごとの要素はないのでただの掲示板．将来的にはお絵描きボードみたいにしたい．
