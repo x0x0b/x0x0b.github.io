@@ -12,26 +12,54 @@
     <style>
       body {
         font-family: "Source Code Pro", monospace;
-        background-color: #f8faff;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background-attachment: fixed;
+      }
+      .ocean-wave {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 300%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        animation: wave 20s linear infinite;
+      }
+      @keyframes wave {
+        0% { transform: translateX(-100%) rotate(0deg); }
+        100% { transform: translateX(0%) rotate(360deg); }
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      }
+      .profile-icon {
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+        transition: transform 0.3s ease;
+      }
+      .profile-icon:hover {
+        transform: scale(1.1);
       }
     </style>
   </head>
-  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white rounded-lg shadow-lg p-6 text-center w-full max-w-sm">
+  <body class="flex items-center justify-center min-h-screen relative overflow-hidden">
+    <div class="ocean-wave"></div>
+    <div class="glass-card rounded-xl p-8 text-center w-full max-w-md relative z-10">
       <img
-        class="w-24 h-24 mx-auto rounded-full"
+        class="w-32 h-32 mx-auto rounded-full profile-icon border-4 border-white/30"
         src="https://avatars.githubusercontent.com/u/42596409"
-        alt="Profile Picture"
+        alt="Profile Picture - Seal Icon"
       />
-      <h1 class="text-2xl font-bold mt-4">x0x0b</h1>
-      <p class="text-gray-500 mt-2">Backend Engineer</p>
-      <div class="mt-6 space-y-2">
+      <h1 class="text-3xl font-bold mt-6 text-white drop-shadow-lg">x0x0b</h1>
+      <p class="text-blue-100 mt-3 text-lg">Backend Engineer</p>
+      <div class="mt-8">
         <a
           href="https://github.com/x0x0b"
-          class="flex items-center justify-center bg-gray-800 text-white py-2 rounded-md hover:bg-gray-900"
+          class="inline-flex items-center justify-center bg-white/20 text-white py-3 px-6 rounded-full hover:bg-white/30 transition-all duration-300 backdrop-blur-sm border border-white/30 hover:scale-105"
         >
           <svg
-            class="w-5 h-5 mr-2"
+            class="w-5 h-5 mr-3"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -43,7 +71,7 @@
           GitHub
         </a>
       </div>
-      <p class="text-gray-400 text-sm mt-6">&copy;x0x0b</p>
+      <p class="text-blue-100/70 text-sm mt-8">&copy;x0x0b</p>
     </div>
   </body>
 </html>
