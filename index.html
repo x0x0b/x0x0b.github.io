@@ -1,77 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>x0x0b</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Source Code Pro", monospace;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        background-attachment: fixed;
-      }
-      .ocean-wave {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 300%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-        animation: wave 20s linear infinite;
-      }
-      @keyframes wave {
-        0% { transform: translateX(-100%) rotate(0deg); }
-        100% { transform: translateX(0%) rotate(360deg); }
-      }
-      .glass-card {
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      }
-      .profile-icon {
-        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
-        transition: transform 0.3s ease;
-      }
-      .profile-icon:hover {
-        transform: scale(1.1);
-      }
-    </style>
-  </head>
-  <body class="flex items-center justify-center min-h-screen relative overflow-hidden">
-    <div class="ocean-wave"></div>
-    <div class="glass-card rounded-xl p-8 text-center w-full max-w-md relative z-10">
-      <img
-        class="w-32 h-32 mx-auto rounded-full profile-icon border-4 border-white/30"
-        src="https://avatars.githubusercontent.com/u/42596409"
-        alt="Profile Picture - Seal Icon"
-      />
-      <h1 class="text-3xl font-bold mt-6 text-white drop-shadow-lg">x0x0b</h1>
-      <p class="text-blue-100 mt-3 text-lg">Backend Engineer</p>
-      <div class="mt-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="x0x0b - Backend Engineer profile">
+  <title>x0x0b - Backend Engineer | Ocean of Code</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ocean-wave" aria-hidden="true"></div>
+  
+  <div class="container">
+    <div class="glass-card">
+      <header class="profile-header">
+        <img
+          class="profile-image"
+          src="https://avatars.githubusercontent.com/u/42596409"
+          alt="x0x0b profile picture - Seal Icon"
+        >
+        <h1 class="profile-name">x0x0b</h1>
+        <p class="profile-title">Backend Engineer</p>
+      </header>
+      
+      <main class="actions">
         <a
           href="https://github.com/x0x0b"
-          class="inline-flex items-center justify-center bg-white/20 text-white py-3 px-6 rounded-full hover:bg-white/30 transition-all duration-300 backdrop-blur-sm border border-white/30 hover:scale-105"
+          class="btn btn-primary"
+          aria-label="Visit x0x0b's GitHub profile"
         >
-          <svg
-            class="w-5 h-5 mr-3"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.997.107-.776.418-1.305.763-1.605-2.665-.305-5.466-1.333-5.466-5.93 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.398 3.003-.404 1.02.006 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.478 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.292 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-            ></path>
+          <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.997.107-.776.418-1.305.763-1.605-2.665-.305-5.466-1.333-5.466-5.93 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.398 3.003-.404 1.02.006 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.478 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.292 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
           </svg>
           GitHub
         </a>
-      </div>
-      <p class="text-blue-100/70 text-sm mt-8">&copy;x0x0b</p>
+      </main>
+
+      <nav class="nav-links">
+        <a href="codex-launcher/" class="nav-link">Privacy Policy - Codex Launcher</a>
+      </nav>
+
+      <footer class="footer">
+        <p>&copy;x0x0b</p>
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
 </html>
