@@ -3,46 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="x0x0b - Backend Engineer profile">
-  <title>x0x0b - Backend Engineer</title>
+  <meta name="description" content="x0x0b - Backend Engineer">
+  <title>x0x0b | Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ocean-wave" aria-hidden="true"></div>
-  
-  <div class="container">
-    <div class="glass-card">
+  <div class="background-grid"></div>
+
+  <main class="container">
+    <div class="profile-card">
       <header class="profile-header">
-        <img
-          class="profile-image"
-          src="https://avatars.githubusercontent.com/u/42596409"
-          alt="x0x0b profile picture - Seal Icon"
-        >
+        <div class="profile-image-container">
+          <a href="https://github.com/x0x0b" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+            <img
+              class="profile-image"
+              src="https://avatars.githubusercontent.com/u/42596409"
+              alt="x0x0b profile picture"
+            >
+          </a>
+        </div>
         <h1 class="profile-name">x0x0b</h1>
         <p class="profile-title">Backend Engineer</p>
-      </header>
-      
-      <main class="actions">
-        <a
-          href="https://github.com/x0x0b"
-          class="btn btn-primary"
-          aria-label="Visit x0x0b's GitHub profile"
-        >
-          <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.997.107-.776.418-1.305.763-1.605-2.665-.305-5.466-1.333-5.466-5.93 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.398 3.003-.404 1.02.006 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.478 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.292 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-          </svg>
-          GitHub
+
+      <section class="privacy-section">
+        <p class="section-label">Privacy Policy</p>
+        <a href="codex-launcher/" class="tech-link" aria-label="Codex Launcher Privacy Policy">
+          <span class="link-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+          </span>
+          <span class="link-text">Codex Launcher</span>
+          <span class="link-arrow">→</span>
         </a>
-      </main>
+      </section>
 
-      <nav class="nav-links">
-        <a href="codex-launcher/" class="nav-link">Privacy Policy - Codex Launcher</a>
-      </nav>
 
-      <footer class="footer">
-        <p>&copy;x0x0b</p>
-      </footer>
     </div>
-  </div>
+  </main>
 </body>
 </html>
