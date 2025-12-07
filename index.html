@@ -3,45 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="x0x0b - Backend Engineer">
-  <title>x0x0b | Backend Engineer</title>
+  <meta name="description" content="Portfolio of x0x0b's featured work - Codex Launcher and ComfyUI extensions">
+  <title>x0x0b | Backend Engineer & Tool Developer</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦭</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="background-grid"></div>
 
   <main class="container">
-    <div class="profile-card">
-      <header class="profile-header">
-        <div class="profile-image-container">
-          <a href="https://github.com/x0x0b" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
-            <img
-              class="profile-image"
-              src="https://avatars.githubusercontent.com/u/42596409"
-              alt="x0x0b profile picture"
-            >
-          </a>
-        </div>
-        <h1 class="profile-name">x0x0b</h1>
-        <p class="profile-title">Backend Engineer</p>
+    <section class="hero-layout">
+      <div class="profile-card hero-card">
+        <header class="profile-header">
+          <div class="profile-image-container">
+            <a href="https://github.com/x0x0b" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+              <img
+                class="profile-image"
+                src="https://avatars.githubusercontent.com/u/42596409"
+                alt="x0x0b profile picture"
+              >
+            </a>
+          </div>
 
-      <section class="privacy-section">
-        <p class="section-label">Privacy Policy</p>
-        <a href="codex-launcher/" class="tech-link" aria-label="Codex Launcher Privacy Policy">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-          </span>
-          <span class="link-text">Codex Launcher</span>
-          <span class="link-arrow">→</span>
+          <div class="profile-intro">
+            <h1 class="profile-name">x0x0b</h1>
+            <p class="profile-title">Backend Engineer</p>
+            <p class="profile-bio">
+              I publish tools that improve developer experience through JetBrains plugins and ComfyUI extensions.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="pill-link" href="https://github.com/x0x0b" target="_blank" rel="noopener noreferrer">
+              GitHub
+              <span class="pill-arrow">↗</span>
+            </a>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="project-grid">
+        <a class="project-card" href="https://github.com/x0x0b/codex-launcher" target="_blank" rel="noopener noreferrer">
+          <div class="project-top">
+            <span class="project-pill">JetBrains Plugin</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Codex Launcher</h3>
+          <p class="project-desc">
+            A JetBrains IDE plugin that calls the OpenAI Codex CLI with one click to boost the development experience.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Kotlin</span>
+          </div>
         </a>
-      </section>
 
+        <a class="project-card" href="https://github.com/x0x0b/ComfyUI-PromptHistoryGallery" target="_blank" rel="noopener noreferrer">
+          <div class="project-top">
+            <span class="project-pill">ComfyUI custom node & UI</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Prompt History Gallery</h3>
+          <p class="project-desc">
+            A ComfyUI extension that turns generated images and prompts into a gallery for quick reuse and comparison.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS</span>
+          </div>
+        </a>
 
-    </div>
+        <a class="project-card" href="https://github.com/x0x0b/ComfyUI-spritefusion-pixel-snapper" target="_blank" rel="noopener noreferrer">
+          <div class="project-top">
+            <span class="project-pill">ComfyUI custom node</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Sprite Fusion Pixel Snapper for ComfyUI</h3>
+          <p class="project-desc">
+            ComfyUI port of Sprite Fusion Pixel Snapper - a tool that snaps pixels to a perfect grid and fixes messy, inconsistent pixel art generated by AI.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+          </div>
+        </a>
+
+        <a class="project-card subtle-card" href="codex-launcher/" aria-label="Codex Launcher Privacy Policy">
+          <div class="project-top">
+            <span class="project-pill">Document</span>
+            <span class="project-arrow">→</span>
+          </div>
+          <h3 class="project-title">Codex Launcher Privacy Policy</h3>
+          <p class="project-desc">
+            A concise page that outlines the data handled by the plugin and its policy.
+          </p>
+        </a>
+      </div>
+    </section>
   </main>
 </body>
 </html>
