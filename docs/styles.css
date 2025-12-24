@@ -261,8 +261,7 @@ body {
 }
 
 .pill-arrow {
-  font-family: var(--font-mono);
-  font-weight: 700;
+  display: inline-flex;
 }
 
 .links-section {
@@ -450,7 +449,7 @@ body {
 }
 
 .project-arrow {
-  font-family: var(--font-mono);
+  display: inline-flex;
   color: var(--text-secondary);
   transition: transform 0.2s ease, color 0.2s ease;
 }
