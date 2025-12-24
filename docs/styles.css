@@ -235,18 +235,19 @@ body {
   gap: 0.4rem;
   padding: 0.85rem 1.2rem;
   border-radius: 14px;
-  background: linear-gradient(120deg, var(--accent-color), var(--accent-2));
+  background: #24292f;
   color: white;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.2px;
-  box-shadow: 0 12px 24px -10px rgba(14, 165, 233, 0.45);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 24px -10px rgba(36, 41, 47, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .pill-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px -12px rgba(14, 165, 233, 0.5);
+  box-shadow: 0 14px 28px -12px rgba(36, 41, 47, 0.5);
+  background-color: #2f363d;
 }
 
 .pill-link.subtle {
