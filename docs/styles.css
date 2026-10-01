@@ -34,7 +34,8 @@ p, h1, h2, h3 { margin: 0; }
 .shoreline { height: 24px; }
 .shoreline svg { display: block; width: 100%; height: 100%; fill: none; stroke: #9ebbb3; stroke-width: 1; }
 .works { padding-top: 52px; }
-.text-link { display: inline-flex; align-items: center; gap: 24px; font-size: 13px; padding: 8px 0; border-bottom: 1px solid var(--sea); }
+.text-link { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; padding: 8px 0; border-bottom: 1px solid var(--sea); }
+.text-link:hover { text-decoration: none; }
 .section-heading { padding-bottom: 28px; }
 .section-heading h2 { font-size: 26px; font-weight: 700; }
 .work { display: grid; grid-template-columns: 60px minmax(0, 1fr) 130px; gap: 24px; padding: 36px 0; border-top: 1px solid var(--line); }
