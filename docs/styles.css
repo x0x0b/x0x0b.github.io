@@ -28,7 +28,7 @@ p, h1, h2, h3 { margin: 0; }
 .intro h1 { font-size: clamp(68px, 7.4vw, 100px); font-weight: 700; line-height: 1.25; letter-spacing: -.015em; }
 .intro-role { font-weight: 500; font-size: 17px; margin-top: 14px; }
 .intro-description { color: var(--muted); font-size: 14px; line-height: 2; margin-top: 24px; max-width: 430px; }
-.portrait { margin-right: 10px; padding: 13px; background: #fffef8; transform: rotate(2deg); box-shadow: 1px 4px 12px #263e3e0c; }
+.portrait { width: 100%; max-width: 380px; justify-self: center; margin-right: 10px; padding: 13px; background: #fffef8; transform: rotate(2deg); box-shadow: 1px 4px 12px #263e3e0c; }
 .portrait img { width: 100%; }
 .intro-link { margin-top: 28px; }
 .shoreline { height: 24px; }
@@ -84,7 +84,7 @@ p, h1, h2, h3 { margin: 0; }
   .intro-role { font-size: 16px; margin-top: 10px; }
   .intro-description { margin-top: 20px; }
   .intro-link { margin-top: 20px; }
-  .portrait { width: 78%; max-width: 340px; justify-self: end; margin-right: 10px; padding: 10px; }
+  .portrait { width: 78%; max-width: 340px; justify-self: center; margin-right: 0; padding: 10px; }
   .works { padding-top: 32px; }
   .section-heading { padding-bottom: 24px; }
   .section-heading h2 { font-size: 23px; }
